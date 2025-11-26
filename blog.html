@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & Tutorials | Bekur Tech</title>
+    <meta name="description" content="Tech tutorials, hardware reviews, and IT tips from Bekur Tech.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Bekur<span class="accent">Tech</span>.</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+                <div class="hamburger">
+                    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header bg-light section">
+        <div class="container text-center">
+            <h1>Tech Hub & <span class="text-gradient">Tutorials</span></h1>
+            <p>Latest guides, hardware reviews, and video content.</p>
+            
+            <div class="blog-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="video">Videos</button>
+                <button class="filter-btn" data-filter="article">Articles</button>
+                <button class="filter-btn" data-filter="review">Reviews</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="blog-grid">
+
+                <article class="blog-card" data-category="video">
+                    <div class="card-image video-thumbnail">
+                        <img src="https://placehold.co/600x340/0f172a/06b6d4?text=Excel+Masterclass" alt="Excel Tutorial">
+                        <a href="https://youtube.com" target="_blank" class="play-btn">
+                            <i class="fas fa-play"></i>
+                        </a>
+                        <span class="category-tag video-tag"><i class="fab fa-youtube"></i> Tutorial</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="meta">
+                            <span><i class="far fa-calendar"></i> Oct 24, 2024</span>
+                            <span><i class="far fa-clock"></i> 1h 03 min watch</span>
+                        </div>
+                        <h3>Master Excel by your self</h3>
+                        <p>A complete walkthrough in MS Excel that makes you advanced user</p>
+                        <a href="https://youtu.be/GpFUDtKJcdM?si=vva1VtvuyXMUWyA1" class="read-more">Watch Video <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="article">
+                    <div class="card-image">
+                        <img src="https://placehold.co/600x340/2563eb/ffffff?text=Cyber+Security" alt="Security Tips">
+                        <span class="category-tag article-tag"><i class="fas fa-file-alt"></i> Guide</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="meta">
+                            <span><i class="far fa-calendar"></i> Oct 20, 2024</span>
+                            <span><i class="far fa-eye"></i> 1.2k views</span>
+                        </div>
+                        <h3>5 Cybersecurity Tips for Small Businesses</h3>
+                        <p>Protect your network and data from phishing attacks with these essential IT practices.</p>
+                        <a href="#" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="blog-card" data-category="article">
+                    <div class="card-image">
+                        <img src="https://placehold.co/600x340/2563eb/ffffff?text=Fast+Laptop" alt="Speed up Laptop">
+                        <span class="category-tag article-tag"><i class="fas fa-bolt"></i> Tech Tip</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="meta">
+                            <span><i class="far fa-calendar"></i> Nov 15, 2024</span>
+                            <span><i class="far fa-clock"></i> 3 min read</span>
+                        </div>
+                        <h3>5 Ways to Speed Up a Slow Laptop (Without Buying a New One)</h3>
+                        <p>Is your PC lagging? Before you spend money on a new device, try disabling startup apps, clearing temp files, and upgrading to an SSD.</p>
+                        <a href="#" class="read-more">Read Guide <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="review">
+                    <div class="card-image">
+                        <img src="https://placehold.co/600x340/334155/ffffff?text=Laptop+Review" alt="Laptop Review">
+                        <span class="category-tag review-tag"><i class="fas fa-star"></i> Review</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="meta">
+                            <span><i class="far fa-calendar"></i> Oct 15, 2024</span>
+                        </div>
+                        <h3>Best Budget Laptops for Coding 2024</h3>
+                        <p>We tested the top 5 affordable laptops for web development and students. Here is the winner.</p>
+                        <a href="#" class="read-more">Read Review <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                 <article class="blog-card" data-category="video">
+                    <div class="card-image video-thumbnail">
+                        <img src="https://placehold.co/600x340/06b6d4/ffffff?text=Canva+Design" alt="Canva Tutorial">
+                        <a href="https://youtube.com" target="_blank" class="play-btn">
+                            <i class="fas fa-play"></i>
+                        </a>
+                        <span class="category-tag video-tag"><i class="fab fa-youtube"></i> Tutorial</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="meta">
+                            <span><i class="far fa-calendar"></i> Oct 10, 2024</span>
+                            <span><i class="far fa-clock"></i> 8 min watch</span>
+                        </div>
+                        <h3>Canva for Beginners: Design a Logo</h3>
+                        <p>Learn how to use Canva free tools to create a professional brand logo step-by-step.</p>
+                        <a href="#" class="read-more">Watch Video <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Bekur<span class="accent">Tech</span></h3>
+                <p>Simplifying technology for everyone. Professional IT services and education.</p>
+            </div>
+            <div class="footer-socials">
+                <a href="https://youtube.com/@bekurtech"><i class="fab fa-youtube"></i></a>
+                <a href="https://tiktok.com/@bekurtech3"><i class="fab fa-tiktok"></i></a>
+                <a href="https://t.me/bekurtecheth"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Bekur Tech | All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
